@@ -1,13 +1,15 @@
 import "./ExploreContainer.css";
 
-interface ContainerProps {}
+interface ContainerProps {
+  name: string;
+}
 
-const ExploreContainer: React.FC<ContainerProps> = () => {
+const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div className="container">
-      <strong>Ready to create a React app?</strong>
+      <strong>{name}</strong>
       <p>
-        Start with Ionic{" "}
+        React{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
